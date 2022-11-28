@@ -5,7 +5,7 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Sidebar, Videos } from './';
 
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState('New');
+  const [selectedCategory, setSelectedCategory] = useState('Coding');
   const [videos, setVideos] = useState(null);
 
   useEffect(() => {
@@ -16,6 +16,7 @@ const Feed = () => {
 
   return (
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
+      {/* Box 1 : The Sidebar */}
       <Box
         sx={{
           height: { sx: 'auto', md: '92vh' },
@@ -29,17 +30,19 @@ const Feed = () => {
         />
 
         <Typography
-          className='copyright'
-          variant='body2'
+          className="copyright"
+          variant="body2"
           sx={{ mt: 1.5, color: '#fff' }}
         >
           Copyright © 2022 Abla Malki
         </Typography>
       </Box>
+
+      {/* Box 2 : The Feed */}
       <Box p={2} sx={{ overflowY: 'auto', height: '90vh', flex: 2 }}>
         <Typography
-          variant='h4'
-          fontWeight='bold'
+          variant="h4"
+          fontWeight="bold"
           mb={2}
           sx={{ color: 'white' }}
         >

@@ -41,7 +41,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
             border: '1px solid #e3e3e3',
           }}
         />
-        <Typography variant='h6'>
+        <Typography variant="h6">
           {channelDetail?.snippet?.title}{' '}
           <CheckCircleIcon
             sx={{ fontSize: '14px', color: 'gray', ml: '5px' }}
